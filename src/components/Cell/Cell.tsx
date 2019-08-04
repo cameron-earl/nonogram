@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { MouseEventHandler, useEffect } from 'react';
+import React, { MouseEventHandler } from 'react';
 
 import CellValue from '../../models/CellValue';
 import Coord from '../../models/Coord';
@@ -28,7 +28,6 @@ const Cell = React.memo(
       selected.map(e => styles[Edge[e]]),
       styles.Cell
     );
-    useEffect(coord[0] === 0 && coord[1] === 0 ? () => console.count('Cell rerender') : () => {}, [handleMouseDown]);
 
     const handleContextMenu: MouseEventHandler = ev => {
       ev.preventDefault();

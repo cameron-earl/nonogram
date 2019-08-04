@@ -35,15 +35,15 @@ class Puzzle {
     return this.cluesForLine(line);
   }
 
-  private static cluesForLine(line: CellValue[]) {
+  static cluesForLine(line: CellValue[]) {
     const clues: number[] = [];
 
     for (let i = 0; i < line.length; i++) {
       let num = 0;
-      while (!num && line[i] === CellValue.Empty) {
+      while (!num && line[i] < CellValue.Black) {
         i++;
       }
-      while (line[i] === CellValue.Black) {
+      while (line[i] >= CellValue.Black) {
         num++;
         i++;
       }

@@ -13,14 +13,14 @@
   flex-direction: row;
 }
 
-.row:nth-of-type(5n) {
+.unsolved .row:nth-of-type(5n) {
   border-bottom: 1px solid black;
 }
 
-.row:nth-of-type(1) {
+.unsolved .row:nth-of-type(1) {
   border-top: 1px solid black;
 }
 
-.row:last-of-type {
+.unsolved .row:last-of-type {
   border-bottom: 1px solid black;
 }

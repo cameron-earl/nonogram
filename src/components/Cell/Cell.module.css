@@ -1,17 +1,9 @@
 .Cell {
   --select-color: lightblue;
-}
-
-.Cell:nth-of-type(5n) {
-  border-right: 1px solid black;
-}
-
-.Cell:nth-of-type(1) {
-  border-left: 1px solid black;
-}
-
-.Cell:last-of-type {
-  border-right: 1px solid black;
+  --shadow-top: inset 0px 10px 5px -5px var(--select-color);
+  --shadow-bottom: inset 0px -10px 5px -5px var(--select-color);
+  --shadow-left: inset 10px 0px 5px -5px var(--select-color);
+  --shadow-right: inset -10px 0px 5px -5px var(--select-color);
 }
 
 .Cell.selectUnknown {
@@ -27,13 +19,6 @@
 }
 
 .Cell {
-  --shadow-top: inset 0px 10px 5px -5px var(--select-color);
-  --shadow-bottom: inset 0px -10px 5px -5px var(--select-color);
-  --shadow-left: inset 10px 0px 5px -5px var(--select-color);
-  --shadow-right: inset -10px 0px 5px -5px var(--select-color);
-}
-
-.Cell {
   flex-grow: 1;
   text-align: center;
   display: flex;
@@ -44,9 +29,22 @@
   box-sizing: border-box;
 }
 
+.Cell.clickable:nth-of-type(5n) {
+  border-right: 1px solid black;
+}
+
+.Cell.clickable:nth-of-type(1) {
+  border-left: 1px solid black;
+}
+
+.Cell.clickable:last-of-type {
+  border-right: 1px solid black;
+}
+
 .Cell.clickable > div:hover {
   cursor: pointer;
 }
+
 .Cell.clickable > div {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }

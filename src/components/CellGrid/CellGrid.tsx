@@ -1,5 +1,5 @@
 import classNames from 'classnames';
-import React, { MouseEventHandler, useEffect, useState } from 'react';
+import React, { MouseEventHandler, useState } from 'react';
 
 import getNewVal from '../../helpers/getNewVal';
 import { isWithin } from '../../helpers/helpers';
@@ -21,14 +21,9 @@ const CellGrid = ({ gameArr, setGameArr, isSolved }: CellGridProps) => {
   const [mouseDown, setMouseDown] = useState(null as (Coord | null));
   const [mouseOver, setMouseOver] = useState(null as Coord | null);
   const [newVal, setNewVal] = useState(null as CellValue | null);
-  console.time('blah');
-  useEffect(() => {
-    console.timeEnd('blah');
-  });
 
   const handleMouseDown = (ev: React.MouseEvent, coord: Coord): void => {
     if (isSolved) return;
-    // console.debug('down', coord, ev.target);
     setMouseDown(coord);
     setNewVal(getNewVal(gameArr[coord[0]][coord[1]], ev.button));
   };
@@ -45,7 +40,6 @@ const CellGrid = ({ gameArr, setGameArr, isSolved }: CellGridProps) => {
   const handleMouseOver = (ev: React.MouseEvent, coord: Coord): void => {
     if (!mouseDown) return;
     setMouseOver(coord);
-    console.debug('over', coord);
   };
 
   const isSelected = ([row, col]: Coord): boolean => {
@@ -91,7 +85,7 @@ const CellGrid = ({ gameArr, setGameArr, isSolved }: CellGridProps) => {
 
   return (
     <div
-      className={classNames({ [styles.CellGrid]: true, [styles.isSolved]: isSolved })}
+      className={classNames({ [styles.CellGrid]: true, [styles.isSolved]: isSolved, [styles.unsolved]: !isSolved })}
       onMouseUp={handleMouseUp}
       onMouseLeave={handleMouseUp}
     >

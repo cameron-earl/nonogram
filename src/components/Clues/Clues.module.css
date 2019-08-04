@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   color: #232323;
+  margin-bottom: 0.5em;
 }
 
 .ColClues > * {
@@ -29,4 +30,18 @@
 
 .RowClues > div > div {
   margin-right: 0.5em;
+}
+
+.Clue {
+  font-weight: bold;
+}
+
+.Clue.incorrect {
+  color: red;
+}
+
+.Clue.complete {
+  text-decoration: line-through;
+  opacity: 0.5;
+  font-weight: normal;
 }

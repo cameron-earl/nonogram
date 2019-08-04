@@ -13,14 +13,13 @@ import styles from './Game.module.css';
 
 export const CREATE_MODE = false;
 const puzzle = CREATE_MODE
-  ? new Puzzle(blankGameArrFromDimensions(15, 15) as PuzzleArr)
+  ? new Puzzle(blankGameArrFromDimensions(10, 10) as PuzzleArr)
   : new Puzzle(randElement(puzzles));
 
 // Timer, puzzle and puzzle selection?
 const Game: React.FC = () => {
   const [gameArr, setGameArr] = useState(blankGameArrForPuzzle(puzzle) as GameArr);
   const isSolved = !hasErrors(gameArr, puzzle);
-  // console.debug(gameArr);
   useEffect(() => {
     if (isSolved) {
       console.log(puzzle.name, 'SOLVED!');
@@ -36,8 +35,8 @@ const Game: React.FC = () => {
   return (
     <div className={styles.Game} tabIndex={0} onKeyPress={handleKeyPress}>
       <GridPreview gameArr={gameArr} />
-      <ColClues clues={puzzle.clues.colClues} />
-      <RowClues clues={puzzle.clues.rowClues} />
+      <ColClues clues={puzzle.clues.colClues} gameArr={gameArr} />
+      <RowClues clues={puzzle.clues.rowClues} gameArr={gameArr} />
       <CellGrid isSolved={isSolved} gameArr={gameArr} setGameArr={setGameArr} />
     </div>
   );

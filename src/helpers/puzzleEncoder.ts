@@ -56,5 +56,5 @@ export const decodePuzzleArr = (b64: string): PuzzleArr => {
     .map(c => toSixBitBinary(symbolToN(c)))
     .join('')
     .slice(-1 * rows * cols);
-  return splitToLen(str, rows).map(s => s.split('').map(n => +n as (0 | 1)));
+  return splitToLen(str, cols).map(s => s.split('').map(n => +n as (0 | 1)));
 };

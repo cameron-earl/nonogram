@@ -7,6 +7,8 @@ export type GameArr = CellValue[][];
 
 export const duplicateArr = (arr: GameArr): GameArr => arr.map(r => [...r]);
 
+export const getColumn = (arr: GameArr, col: number) => arr.map(r => r[col]);
+
 export const updateGameArrCell = (arr: GameArr, [r, c]: Coord, val: CellValue): GameArr => {
   const newArr = duplicateArr(arr);
   newArr[r][c] = val;
