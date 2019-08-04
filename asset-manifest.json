@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/nonogram/static/css/main.a7762856.chunk.css",
-    "main.js": "/nonogram/static/js/main.8230a6d2.chunk.js",
-    "main.js.map": "/nonogram/static/js/main.8230a6d2.chunk.js.map",
+    "main.js": "/nonogram/static/js/main.490532a1.chunk.js",
+    "main.js.map": "/nonogram/static/js/main.490532a1.chunk.js.map",
     "runtime~main.js": "/nonogram/static/js/runtime~main.4c67096e.js",
     "runtime~main.js.map": "/nonogram/static/js/runtime~main.4c67096e.js.map",
     "static/js/2.abe20285.chunk.js": "/nonogram/static/js/2.abe20285.chunk.js",
     "static/js/2.abe20285.chunk.js.map": "/nonogram/static/js/2.abe20285.chunk.js.map",
     "index.html": "/nonogram/index.html",
-    "precache-manifest.11d44d5318fc2cd776754d3072e80759.js": "/nonogram/precache-manifest.11d44d5318fc2cd776754d3072e80759.js",
+    "precache-manifest.708808fe3d74cba4a92a4bbbee35cb18.js": "/nonogram/precache-manifest.708808fe3d74cba4a92a4bbbee35cb18.js",
     "service-worker.js": "/nonogram/service-worker.js",
     "static/css/main.a7762856.chunk.css.map": "/nonogram/static/css/main.a7762856.chunk.css.map"
   }

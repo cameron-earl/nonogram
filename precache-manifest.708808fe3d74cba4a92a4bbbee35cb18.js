@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7ccfcf62614c52802f4e96becee81389",
+    "revision": "63793e161334ec5a627541dc490b9dd3",
     "url": "/nonogram/index.html"
   },
   {
-    "revision": "2bcccc9e2e6ba872ec33",
+    "revision": "c62ea10eeee169f75e32",
     "url": "/nonogram/static/css/main.a7762856.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/nonogram/static/js/2.abe20285.chunk.js"
   },
   {
-    "revision": "2bcccc9e2e6ba872ec33",
-    "url": "/nonogram/static/js/main.8230a6d2.chunk.js"
+    "revision": "c62ea10eeee169f75e32",
+    "url": "/nonogram/static/js/main.490532a1.chunk.js"
   },
   {
     "revision": "c8f6558567c41835a659",
