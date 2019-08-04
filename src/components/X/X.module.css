@@ -1,0 +1,10 @@
+svg.X {
+  width: 100%;
+}
+
+.X > path {
+  stroke: rgba(255, 0, 0, 0.2);
+  stroke-width: 11;
+  fill: transparent;
+  stroke-linecap: round;
+}

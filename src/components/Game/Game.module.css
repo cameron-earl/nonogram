@@ -1,0 +1,7 @@
+.Game {
+  flex-grow: 1;
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: auto 1fr;
+  max-width: 90vh;
+}
