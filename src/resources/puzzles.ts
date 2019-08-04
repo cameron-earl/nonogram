@@ -26,10 +26,3 @@ const original: StoredPuzzle[] = [p('smiley', 'ſƨƏƇƭƄƄ'), p('vampire', '�
 const puzzles = [...borrowed, ...original];
 
 export default puzzles;
-const cohenStory = `
-sat down
-firetrucks spraying
-brody's cousins riding on motorcycles
-parade floats - one had brody's cousins holding signs showing ancestors
-got popsicles and chips and candy 
-`;

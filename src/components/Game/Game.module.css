@@ -5,3 +5,7 @@
   grid-template-columns: auto 1fr;
   max-width: 90vh;
 }
+
+.Game:focus {
+  outline: none;
+}
